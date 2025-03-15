@@ -1,6 +1,12 @@
-/* :root {
-   Variables
-} */
+:root {
+  /* colors */
+  --body-background: #F2EAE2;
+  --card-background: #FFFFFF;
+  --title-color: #1C232B;
+  --body-color: #6C7289;
+  --button-background: #3D8168;
+  --button-background-hover: #1A4032;
+}
 
 /* Setup website fonts */
 @font-face {
@@ -41,18 +47,27 @@ body, .container, .content {
   align-items: center;
   justify-content: center;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   width: 100%;
   height: 100vh;
+  background-color: var(--body-background);
+  color: var(--body-color);
+}
+
+.navbar {
+  font-size: 0.75rem;
+  line-height: 1.2;
+  letter-spacing: 0.3rem;
 }
 
 .container {
-  
   max-width: 350px;
   overflow: hidden;
   height: auto;
+  background-color: var(--card-background);
 }
 
 /* image formatting */
@@ -61,6 +76,41 @@ body {
   max-width: 350px;
   width: 100%;
   background-size: cover;
+}
+
+.title, .price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.title {
+  color: var(--title-color);
+}
+
+.price {
+  color: var(--button-background);
+}
+
+.old-price {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  text-decoration: line-through;
+}
+.description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.btn {
+  font-size: 0.9rem;
+  line-height: 1.1;
+  background-color: var(--button-background);
+  color: var(--card-background);
+}
+
+.btn:hover {
+  background-color: var(--button-background-hover);
 }
 
 .attribution {
